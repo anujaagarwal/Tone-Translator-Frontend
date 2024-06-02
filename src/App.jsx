@@ -12,7 +12,7 @@ function App() {
     axios.post(`${BASE_URL}/translate-tone`, data)
         .then((res) => {
             if (res.data && res.data.completion) {
-                const parsedInner = JSON.parse(res.data.completion);
+                const parsedInner = res.data.completion;
                 setResult(`Tone of Sample Content is ${parsedInner.sample_tone}. This is the writing style translated draft based on the sample content provided: ${parsedInner.translated_text}`);
             } else {
                 console.log("Error: Unexpected response format", res.data);
