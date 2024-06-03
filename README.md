@@ -79,10 +79,11 @@ Environment Variables used are:-
 │   ├── App.jsx
 │   ├── assets
 │   │   └── react.svg
+|   |   |- Fibr.png
 │   ├── components
 │   │   ├── DisplayResult.jsx
 │   │   ├── InputForm.jsx
-│   │   └── TimeDisplay.jsx
+│   │   └── CardHeader.jsx
 │   ├── index.css
 │   └── main.jsx
 ├── tailwind.config.js
