@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import InputForm from './components/InputForm';
 import DisplayResult from './components/DisplayResult';
-import TimeDisplay from './components/TimeDisplay';
 import axios from 'axios';
+import CardHeader from './components/CardHeader';
 
 function App() {
   const [result, setResult] = useState('');
@@ -34,7 +34,7 @@ function App() {
         <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
         
           <div className="max-w-md mx-auto">
-            <TimeDisplay />
+            <CardHeader />
             <InputForm onSubmit={handleFormSubmit} />
             <DisplayResult result={result} />
           </div>

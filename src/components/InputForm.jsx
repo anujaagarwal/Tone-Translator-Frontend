@@ -12,7 +12,7 @@ function InputForm({ onSubmit }) {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <label htmlFor="sample_content" className="block text-sm font-medium text-gray-700">Sample Content</label>
+        <label htmlFor="sample_content" className="block text-sm font-medium text-gray-700">Tone Reference Text</label>
         <textarea
           id="sample_content"
           rows="3"
@@ -24,7 +24,7 @@ function InputForm({ onSubmit }) {
         ></textarea>
       </div>
       <div>
-        <label htmlFor="new_draft" className="block text-sm font-medium text-gray-700">New Draft</label>
+        <label htmlFor="new_draft" className="block text-sm font-medium text-gray-700">Adjustable Text</label>
         <textarea
           id="new_draft"
           rows="3"
