@@ -13,7 +13,9 @@ function App() {
         .then((res) => {
             if (res.data && res.data.completion) {
                 const parsedInner = res.data.completion;
-                setResult(`Tone of reference text is ${parsedInner.sample_tone}. This is the writing style translated text based on the reference text provided: ${parsedInner.translated_text}`);
+                setResult(`Detected Sentiment: ${parsedInner.sample_sentiment},
+                Detected Writing style: ${parsedInner.sample_tone},
+                Transformed Text: ${parsedInner.translated_text}`);
             } else {
                 console.log("Error: Unexpected response format", res.data);
             }
