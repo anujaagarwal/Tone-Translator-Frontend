@@ -19,7 +19,7 @@ function InputForm({ onSubmit }) {
           value={sample_content}
           onChange={(e) => setSample_content(e.target.value)}
           className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm"
-          placeholder="Enter sample content here..."
+          placeholder="Enter reference text here..."
           required
         ></textarea>
       </div>
@@ -31,7 +31,7 @@ function InputForm({ onSubmit }) {
           value={new_draft}
           onChange={(e) => setNew_Draft(e.target.value)}
           className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm"
-          placeholder="Enter new draft text here..."
+          placeholder="Enter the text you want to translate the tone of..."
           required
         ></textarea>
       </div>
