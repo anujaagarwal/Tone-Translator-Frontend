@@ -8,7 +8,7 @@ The AI-Powered Tone Analyzer and Translator is a simple and effective tool that 
 
 - [Project Overview](#project-overview)
 - [Getting Started](#getting-started)
-- [Program Design](#program-design)
+- [UI Guide](#ui-guide)
 - [Usecase](#usecase)
 - [API Integration](#api-integration)
 - [UI related decisions](#ui-related-decisions)
@@ -64,6 +64,42 @@ Environment Variables used are:-
 
 6. Open your web browser and access the application at `http://localhost:5173/` you will see the tool.
 
+## UI Guide
+Here’s a simplified and clear guide for using the UI of your Tone Translator tool:
+
+### UI Guide for Tone Translator
+
+#### Overview:
+The Tone Translator interface includes two main input fields where users can enter text. The purpose of these fields is to analyze the tone and sentiment of a given sample text and to adjust another piece of text to match this tone.
+
+#### Input Fields:
+
+1. **Tone Reference Text Field:**
+   - **Description:** Enter the text whose tone and sentiment you want to analyze. This text serves as your reference for the desired tone.
+   - **Purpose:** This is used to identify and understand the tone and sentiment of the text you wish to emulate.
+
+2. **Adjustable Text Field:**
+   - **Description:** Enter the text you want to adjust to match the tone of the reference text.
+   - **Purpose:** This text will be modified to reflect the tone and style of the Tone Reference Text.
+
+#### Button:
+
+- **Apply Tone Button:**
+  - **Function:** Click this button after entering text in both fields.
+  - **Outcome:** The system analyzes the tone and sentiment of the Tone Reference Text and applies a similar tone to the Adjustable Text. The results are displayed immediately.
+
+#### Results:
+- After clicking the "Apply Tone" button, the system processes:
+  - The analyzed tone and sentiment of the Tone Reference Text.
+  - The Adjustable Text rephrased to align with the identified tone of the Tone Reference Text.
+
+#### How to Use:
+1. **Input Text:** Start by typing or pasting the text you want to analyze into the Tone Reference Text Field.
+2. **Prepare Adjustable Text:** Enter the text that needs tone adjustment in the Adjustable Text Field.
+3. **Apply Tone:** Click the "Apply Tone" button to see the transformation of the Adjustable Text to match the tone of the Tone Reference Text.
+4. **View Results:** Observe the changes and use the adjusted text as needed.
+
+This guide should help users effectively navigate and utilize the Tone Translator interface to match tones across different texts.
 
 - **FolderStructure:** Explaining folder structure in 2 to 3 lines. Certainly! In a React.js project, the folder structure is designed to promote an organized and efficient development process. At the root level, you'll typically find essential configuration files such as package.json, tailwindconfig. The src directory contains components Directory. You must have seen "components" directory for reusable React components. This structure not only encourages a component-based architecture but also aligns well .
   Here is the folder structure:-
