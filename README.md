@@ -65,7 +65,7 @@ Environment Variables used are:-
 6. Open your web browser and access the application at `http://localhost:5173/` you will see the tool.
 
 ## UI Guide
-Here’s a simplified and clear guide for using the UI of your Tone Translator tool:
+Here’s a simplified and clear guide for using the UI of Tone Translator tool:
 
 ### UI Guide for Tone Translator
 
