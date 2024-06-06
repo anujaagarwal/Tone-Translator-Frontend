@@ -6,11 +6,7 @@ import CardHeader from './components/CardHeader';
 
 
 function App() {
-  const [result, setResult] = useState({
-    tone : "",
-    sentiment : "",
-    translated : ""
-})
+  const [result, setResult] = useState(null)
  
   const BASE_URL = import.meta.env.VITE_REACT_APP_API_BASE_URL;
   const handleFormSubmit = async (data) => {
@@ -20,9 +16,9 @@ function App() {
             if (res.data && res.data.completion) {
                 const parsedInner = res.data.completion;
                 setResult({
-                  tone: parsedInner.sample_tone,
-                  sentiment: parsedInner.sample_sentiment,
-                  translated: parsedInner.translated_text
+                  tone: parsedInner.sample_tone || "",
+                  sentiment: parsedInner.sample_sentiment || "",
+                  translated: parsedInner.translated_text || ""
                 })
                 // setResult(`Detected Sentiment: ${parsedInner.sample_sentiment}.
                 // Detected Writing style: ${parsedInner.sample_tone}.
