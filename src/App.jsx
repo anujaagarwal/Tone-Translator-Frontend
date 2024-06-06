@@ -7,9 +7,9 @@ import CardHeader from './components/CardHeader';
 
 function App() {
   const [result, setResult] = useState({
-    tone : " ",
-    sentiment : " ",
-    translated : " "
+    tone : "",
+    sentiment : "",
+    translated : ""
 })
  
   const BASE_URL = import.meta.env.VITE_REACT_APP_API_BASE_URL;
